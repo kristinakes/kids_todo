@@ -1,8 +1,7 @@
 # Todo list with Bonus
-# Todo list with Bonus
 
-##### Project idea
-I had an idea on how to easily help kids to track they daily/weekly tasks at home and also include some fun bonus system:
+## Project idea
+I had an idea on how to help kids to easily track they daily/weekly tasks at home and also include some fun bonus system:
  - add their tasks
  -  mark them completed
  -  see the status 
