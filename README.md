@@ -1,5 +1,7 @@
 # Todo list with Bonus
 
+DEMO: https://kristinakes.github.io/kids_todo/
+
 ## Project idea
 I had an idea on how to help kids to easily track they daily/weekly tasks at home and also include some fun bonus system:
  - add their tasks
