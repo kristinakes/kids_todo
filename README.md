@@ -1,4 +1,4 @@
-# Todo list for Kids with Bonuss
+# Todo list for Kids with Bonus
 
 DEMO: https://kristinakes.github.io/kids_todo/
 
