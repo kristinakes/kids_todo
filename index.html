@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Todo list with Bonus</title>
+
+</head>
+<body>
+    <header>
+        <h1>My weekly tasks</h1>
+    </header>
+    <div class="flex-row results">
+        <h2>Your status</h2>
+        <div class="flex-row points">    
+            <div>
+                <h3> Missing tasks</h3>
+                <p id="missTask"></p>
+            </div>
+            <div>
+                <h3>To Do</h3>
+                <p id="uncompleted"></p>
+            </div>
+            <div>
+                <h3>Done</h3>
+                <p id="completed"></p>
+            </div>
+            <div>
+                <h3>Bonus</h3>
+                <p id="double"></p>
+            </div>
+            <div>
+                <h3>TOTAL</h3>
+                <p id="total"></p>
+            </div>
+        </div>
+        <button id="cash" onclick="openReceipt()">Cash Out</button>
+        <button id="reset" onclick="reset()">Reset all tasks</button>
+    </div>
+
+    <div class="flex-column">
+        <form id="form">
+            <input type="text" name="todo" class="input" id="input" placeholder="Enter your action" autocomplete="off">
+        </form>  
+        <div>
+            <small>Left click to toggle completion. Right click to delete action.</small>
+            <ul class="flex-row todos" id="todos">
+            </ul>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content"> 
+            <table id="mail">
+                <h2>Your receipt</h2>
+                <tbody>
+                    <tr>
+                        <td>Total points collected:</td>
+                        <td id="points"></td>
+                    </tr>
+                    <tr>
+                        <td>1 point = </td>
+                        <td>0,5 EUR</td>
+                    </tr>
+                    <tr>
+                        <td>You earned:</td>
+                        <td id="earning"></td>
+                    </tr>
+                    <tr>
+                        <td>Date converted:</td>
+                        <td id="date"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="send" onclick="sendReceipt()">Send</button>
+            <button id="close" onclick="closeReceipt()">Close</button>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+    <footer> Created by Kristina Kes, 2023</footer>
+    <script src="library.js"></script>
+</body>
+</html>
